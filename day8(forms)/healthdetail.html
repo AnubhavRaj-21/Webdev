@@ -1,0 +1,94 @@
+<h1>Health Details Form</h1>
+<form>
+    <fieldset>
+        <legend>Personal Information</legend>
+
+        <label for="Name">Full Name: </label>
+        <input type="text" name="fname" id="Name">
+        <br><br>
+
+        <!-- DOB -->
+        <label for="dob">Date of Birth</label>
+        <input type="date" name="birthdetails" id="dob">
+        <br><br>
+
+        <!-- Gender -->
+        <label for="gender">Gender</label>
+        <select name="gender" id="gender">
+            <option value="" disabled selected>Select Your Gender</option>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+            <option value="Others">Others</option>
+        </select>
+        <br><br>
+
+        <!-- Phone Number -->
+        <label for="number">Phone Number</label>
+        <input type="tel" name="Contact" id="number">
+        
+    </fieldset>
+    <br>
+    <!-- Medical History -->
+    <fieldset>
+        <legend>Medical History</legend>
+
+        <!-- blood Group -->
+        <label for="bg">Blood Group</label>
+        <select name="blood Group" id="bg">
+            <option value="" disabled selected>Blood Group</option>
+            <option value="A+">A+</option>
+            <option value="B+">B+</option>
+            <option value="O+">O+</option>
+            <option value="etc">etc</option>
+        </select>
+        <br><br>
+
+        <!--glasses?? -->
+        <label>Do you wear glasses??</label>
+        <br>
+        <input type="radio" name="Yes" id="glass">
+        <label for="glass">Yes</label>
+
+        <input type="radio" name="No" id="glass">
+        <label for="glass">No</label>
+        <br><br>
+
+        <!-- Preexisting Conditions -->
+        <label for="pc">Pre-Existing Conditions</label>
+        <br>
+        <textarea name="Pre-Existing" id="pc" placeholder="List any preexisting Conditions" rows="5" cols="50"></textarea>
+        <br><br>
+
+        <label for="allergy">Allergies</label><br>
+        <input type="checkbox" name="Pollen" id="Pollen" value="Pollen">
+        <label for="pollen">Pollen</label><br>
+        <input type="checkbox" name="Peanuts" id="Peanuts" value="Peanuts">
+        <label for="pollen">Pollen</label><br>
+        <input type="checkbox" name="Latex" id="Latex" value="Latex">
+        <label for="Latex">Latex</label><br>
+        <input type="checkbox" name="None" id="None" value="None">
+        <label for="None">None</label><br><br>
+
+        <label for="medicines">Current Medication</label><br>
+        <textarea name="Current Medication" id="medicines" rows="5" cols="29" placeholder="List any current Medications"></textarea>
+
+    </fieldset>
+    <br>
+    <fieldset>
+        <legend>Emergency Contact</legend>
+
+        <label for="ec-name">Emergency Contact Name</label>
+        <input type="text" name="ec-name" id="ec-name">
+        <br><br>
+
+        <label for="ec-phone">Emergency Contact Phone</label>
+        <input type="tel" name="ec-phone" id="ec-phone">
+        <br><br>
+
+        <label for="ec-relation">Relationship with the person</label>
+        <input type="text" name="ec-relation" id="ec-relation">
+        <br><br>
+    </fieldset>
+    <br><br>
+    <button>Submit</button>
+</form>
